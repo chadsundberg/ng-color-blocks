@@ -1,4 +1,4 @@
-colorBlocks.controller('GameController', function() {
+colorBlocks.controller('GameController', ['DataFactory', function(DataFactory) {
 
 console.log('game controller running');
 
@@ -29,4 +29,4 @@ self.handleInput = function(clickedColor) {
 function randomNumber(min, max){
     return Math.floor(Math.random() * (1 + max - min) + min);
 }
-});
+}]);
