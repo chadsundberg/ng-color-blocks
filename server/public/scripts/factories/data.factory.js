@@ -1,7 +1,9 @@
 colorBlocks.factory('DataFactory', function() {
   console.log("data factory running");
-  var colorList = { list:[] };
+  var colorList = ['red', 'blue', 'magenta', 'green', 'pink'];
   console.log(colorList);
+
+  //public API
 
   return {
   	    updateColorBlocks: colorList
