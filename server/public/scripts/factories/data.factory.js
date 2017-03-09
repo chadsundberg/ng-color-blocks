@@ -1,12 +1,16 @@
 colorBlocks.factory('DataFactory', function() {
   console.log("data factory running");
-  var colorList = ['red', 'blue', 'magenta', 'green', 'pink'];
-  console.log(colorList);
+  var colorList = ['red', 'blue', 'magenta', 'green', 'pink', 'yellow'];
+
+  function addingNewColorToFactoryArray(newColor){
+    colorList.push(newColor);
+  }
 
   //public API
 
   return {
-  	    updateColorBlocks: colorList
+  	    updateColorBlocks: colorList,
+        addNew: addingNewColorToFactoryArray
   	  };
 
 // init();
